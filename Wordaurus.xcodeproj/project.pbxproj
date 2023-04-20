@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F87DDE2FEC385BC43D58196 /* Pods_Wordaurus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613C434FB22650ED8E190A9 /* Pods_Wordaurus.framework */; };
+		F3050A1B29EF425E00C45B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3050A1A29EF425E00C45B30 /* AppDelegate.swift */; };
+		F3050A1D29EF425E00C45B30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3050A1C29EF425E00C45B30 /* SceneDelegate.swift */; };
+		F3050A1F29EF425E00C45B30 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3050A1E29EF425E00C45B30 /* RulesViewController.swift */; };
+		F3050A2229EF425E00C45B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3050A2029EF425E00C45B30 /* Main.storyboard */; };
+		F3050A2729EF426100C45B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3050A2629EF426100C45B30 /* Assets.xcassets */; };
+		F3050A2A29EF426100C45B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3050A2829EF426100C45B30 /* LaunchScreen.storyboard */; };
+		F3050A3229EF529000C45B30 /* SynonymApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3050A3129EF529000C45B30 /* SynonymApi.swift */; };
+		F3050A3829EF5AA700C45B30 /* SynonymModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3050A3729EF5AA700C45B30 /* SynonymModel.swift */; };
+		F3050A3A29EF5E8900C45B30 /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3050A3929EF5E8900C45B30 /* WordsModel.swift */; };
+		F3050A3E29EF744200C45B30 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3050A3D29EF744200C45B30 /* ScoreViewController.swift */; };
+		F3741EB229F0C6710058A945 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3741EB129F0C6710058A945 /* GameViewController.swift */; };
+		F3EDC2AE29F2003D00AD5A33 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3EDC2AD29F2003D00AD5A33 /* Keys.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3613C434FB22650ED8E190A9 /* Pods_Wordaurus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordaurus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCED4A42DEF17FBE0424E37 /* Pods-Wordaurus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordaurus.debug.xcconfig"; path = "Target Support Files/Pods-Wordaurus/Pods-Wordaurus.debug.xcconfig"; sourceTree = "<group>"; };
+		D47D967A60B984BF4B3740F1 /* Pods-Wordaurus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordaurus.release.xcconfig"; path = "Target Support Files/Pods-Wordaurus/Pods-Wordaurus.release.xcconfig"; sourceTree = "<group>"; };
+		F3050A1729EF425E00C45B30 /* Wordaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3050A1A29EF425E00C45B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3050A1C29EF425E00C45B30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3050A1E29EF425E00C45B30 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		F3050A2129EF425E00C45B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3050A2629EF426100C45B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3050A2929EF426100C45B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3050A2B29EF426100C45B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3050A3129EF529000C45B30 /* SynonymApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynonymApi.swift; sourceTree = "<group>"; };
+		F3050A3729EF5AA700C45B30 /* SynonymModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynonymModel.swift; sourceTree = "<group>"; };
+		F3050A3929EF5E8900C45B30 /* WordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
+		F3050A3D29EF744200C45B30 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		F3741EB129F0C6710058A945 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F3EDC2AD29F2003D00AD5A33 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3050A1429EF425E00C45B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F87DDE2FEC385BC43D58196 /* Pods_Wordaurus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20DAEE465C275724DE1D6B80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BCED4A42DEF17FBE0424E37 /* Pods-Wordaurus.debug.xcconfig */,
+				D47D967A60B984BF4B3740F1 /* Pods-Wordaurus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBC2820E4655CA1EE17938E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3613C434FB22650ED8E190A9 /* Pods_Wordaurus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3050A0E29EF425E00C45B30 = {
+			isa = PBXGroup;
+			children = (
+				F3050A1929EF425E00C45B30 /* Wordaurus */,
+				F3050A1829EF425E00C45B30 /* Products */,
+				20DAEE465C275724DE1D6B80 /* Pods */,
+				DBC2820E4655CA1EE17938E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3050A1829EF425E00C45B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3050A1729EF425E00C45B30 /* Wordaurus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3050A1929EF425E00C45B30 /* Wordaurus */ = {
+			isa = PBXGroup;
+			children = (
+				F3050A1A29EF425E00C45B30 /* AppDelegate.swift */,
+				F3050A1C29EF425E00C45B30 /* SceneDelegate.swift */,
+				F3050A1E29EF425E00C45B30 /* RulesViewController.swift */,
+				F3741EB129F0C6710058A945 /* GameViewController.swift */,
+				F3050A3D29EF744200C45B30 /* ScoreViewController.swift */,
+				F3050A2029EF425E00C45B30 /* Main.storyboard */,
+				F3050A3129EF529000C45B30 /* SynonymApi.swift */,
+				F3050A3729EF5AA700C45B30 /* SynonymModel.swift */,
+				F3050A3929EF5E8900C45B30 /* WordsModel.swift */,
+				F3050A2629EF426100C45B30 /* Assets.xcassets */,
+				F3050A2829EF426100C45B30 /* LaunchScreen.storyboard */,
+				F3050A2B29EF426100C45B30 /* Info.plist */,
+				F3EDC2AD29F2003D00AD5A33 /* Keys.plist */,
+			);
+			path = Wordaurus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3050A1629EF425E00C45B30 /* Wordaurus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3050A2E29EF426100C45B30 /* Build configuration list for PBXNativeTarget "Wordaurus" */;
+			buildPhases = (
+				019EEB16A6B014CA0A53831F /* [CP] Check Pods Manifest.lock */,
+				F3050A1329EF425E00C45B30 /* Sources */,
+				F3050A1429EF425E00C45B30 /* Frameworks */,
+				F3050A1529EF425E00C45B30 /* Resources */,
+				C1C3D66294CC406C2AA76778 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wordaurus;
+			productName = Wordaurus;
+			productReference = F3050A1729EF425E00C45B30 /* Wordaurus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3050A0F29EF425E00C45B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F3050A1629EF425E00C45B30 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F3050A1229EF425E00C45B30 /* Build configuration list for PBXProject "Wordaurus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3050A0E29EF425E00C45B30;
+			productRefGroup = F3050A1829EF425E00C45B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3050A1629EF425E00C45B30 /* Wordaurus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3050A1529EF425E00C45B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EDC2AE29F2003D00AD5A33 /* Keys.plist in Resources */,
+				F3050A2A29EF426100C45B30 /* LaunchScreen.storyboard in Resources */,
+				F3050A2729EF426100C45B30 /* Assets.xcassets in Resources */,
+				F3050A2229EF425E00C45B30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		019EEB16A6B014CA0A53831F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wordaurus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C3D66294CC406C2AA76778 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wordaurus/Pods-Wordaurus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wordaurus/Pods-Wordaurus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wordaurus/Pods-Wordaurus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3050A1329EF425E00C45B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3050A1F29EF425E00C45B30 /* RulesViewController.swift in Sources */,
+				F3050A3A29EF5E8900C45B30 /* WordsModel.swift in Sources */,
+				F3050A1B29EF425E00C45B30 /* AppDelegate.swift in Sources */,
+				F3050A3229EF529000C45B30 /* SynonymApi.swift in Sources */,
+				F3741EB229F0C6710058A945 /* GameViewController.swift in Sources */,
+				F3050A1D29EF425E00C45B30 /* SceneDelegate.swift in Sources */,
+				F3050A3829EF5AA700C45B30 /* SynonymModel.swift in Sources */,
+				F3050A3E29EF744200C45B30 /* ScoreViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3050A2029EF425E00C45B30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3050A2129EF425E00C45B30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3050A2829EF426100C45B30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3050A2929EF426100C45B30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3050A2C29EF426100C45B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3050A2D29EF426100C45B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3050A2F29EF426100C45B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCED4A42DEF17FBE0424E37 /* Pods-Wordaurus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wordaurus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elenagalluzzo.Wordaurus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3050A3029EF426100C45B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D47D967A60B984BF4B3740F1 /* Pods-Wordaurus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Wordaurus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elenagalluzzo.Wordaurus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3050A1229EF425E00C45B30 /* Build configuration list for PBXProject "Wordaurus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3050A2C29EF426100C45B30 /* Debug */,
+				F3050A2D29EF426100C45B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3050A2E29EF426100C45B30 /* Build configuration list for PBXNativeTarget "Wordaurus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3050A2F29EF426100C45B30 /* Debug */,
+				F3050A3029EF426100C45B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3050A0F29EF425E00C45B30 /* Project object */;
+}
