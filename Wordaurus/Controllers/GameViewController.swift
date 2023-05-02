@@ -23,21 +23,20 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        wordsModel.wordsArray.shuffle()
-        timerProgress.progress = 0.0
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(startAndEndTimer), userInfo: nil, repeats: true)
         typeAnswer.delegate = self
-        loadWord()
-       
-        
-        // Do any additional setup after loading the view.
+        timerProgress.progress = 0.0
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        timer.invalidate()
+        wordsModel.wordsArray.shuffle()
+        loadWord()
+        wordsModel.wordsCorrect = -1
+        updateScoreLabel()
         timerProgress.progress = 0.0
+        timePassed = 0
+        typeAnswer.text = ""
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(startAndEndTimer), userInfo: nil, repeats: true)
     }
     
@@ -47,7 +46,6 @@ class GameViewController: UIViewController {
             timerProgress.progress = Float(timePassed) / Float (gameLength)
         }
         else {
-            timer.invalidate()
             endQuiz()
         }
     }
@@ -59,7 +57,7 @@ class GameViewController: UIViewController {
     }
     
     func loadWord() {
-        word.text = wordsModel.getCurrentWord()
+        self.word.text = self.wordsModel.getCurrentWord()
         wordsModel.getSynonyms(word: word.text ?? "") { [weak self] error, synonymModel in
             if error != nil {
                 return
@@ -73,7 +71,7 @@ class GameViewController: UIViewController {
     
     
     func endQuiz() {
-        
+        timer.invalidate()
         scoreArray.append(wordsModel.wordsCorrect)
         if let previosuScores = UserDefaults.standard.value(forKeyPath: "allScores") as? [Int] {
             self.scoreArray.append(contentsOf: previosuScores)
@@ -86,34 +84,26 @@ class GameViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showScore" {
             if let destinationVC = segue.destination as? ScoreViewController {
-                destinationVC.finalScore?.text = "\(wordsModel.wordsCorrect)"
+                destinationVC.score = "\(wordsModel.wordsCorrect)"
             }
             
         }
     }
     
     
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension GameViewController: UITextFieldDelegate {
   
+    override var canBecomeFirstResponder: Bool {
+           return false
+       }
+       override var canResignFirstResponder: Bool {
+           return false
+       }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+//        textField.resignFirstResponder()
         guard let answer = textField.text else { return false }
         if synomymsArray.contains(answer) {
             updateScoreLabel()

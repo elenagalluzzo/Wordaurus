@@ -94,19 +94,43 @@
 			children = (
 				F3050A1A29EF425E00C45B30 /* AppDelegate.swift */,
 				F3050A1C29EF425E00C45B30 /* SceneDelegate.swift */,
-				F3050A1E29EF425E00C45B30 /* RulesViewController.swift */,
-				F3741EB129F0C6710058A945 /* GameViewController.swift */,
-				F3050A3D29EF744200C45B30 /* ScoreViewController.swift */,
-				F3050A2029EF425E00C45B30 /* Main.storyboard */,
-				F3050A3129EF529000C45B30 /* SynonymApi.swift */,
-				F3050A3729EF5AA700C45B30 /* SynonymModel.swift */,
-				F3050A3929EF5E8900C45B30 /* WordsModel.swift */,
+				F363732C2A004BE40041D04E /* Models */,
+				F363732D2A004BFA0041D04E /* Views */,
+				F363732B2A004B980041D04E /* Controllers */,
 				F3050A2629EF426100C45B30 /* Assets.xcassets */,
 				F3050A2829EF426100C45B30 /* LaunchScreen.storyboard */,
 				F3050A2B29EF426100C45B30 /* Info.plist */,
 				F3EDC2AD29F2003D00AD5A33 /* Keys.plist */,
 			);
 			path = Wordaurus;
+			sourceTree = "<group>";
+		};
+		F363732B2A004B980041D04E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3050A1E29EF425E00C45B30 /* RulesViewController.swift */,
+				F3741EB129F0C6710058A945 /* GameViewController.swift */,
+				F3050A3D29EF744200C45B30 /* ScoreViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F363732C2A004BE40041D04E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3050A3129EF529000C45B30 /* SynonymApi.swift */,
+				F3050A3729EF5AA700C45B30 /* SynonymModel.swift */,
+				F3050A3929EF5E8900C45B30 /* WordsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F363732D2A004BFA0041D04E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3050A2029EF425E00C45B30 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
