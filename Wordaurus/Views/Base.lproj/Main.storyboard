@@ -30,7 +30,7 @@
                                         <color key="textColor" red="0.87396825925268307" green="0.38870575041139505" blue="0.48229416842923828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Type as many synonym to the  words on the screen  in the time limit!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fid-Jo-UAK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Type as many synonyms to the  words on the screen  in the time limit!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fid-Jo-UAK">
                                         <rect key="frame" x="50" y="172" width="293" height="200"/>
                                         <color key="backgroundColor" red="0.98574475069722034" green="1" blue="0.96943598549024479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>

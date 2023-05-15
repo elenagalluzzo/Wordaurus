@@ -60,7 +60,9 @@ class GameViewController: UIViewController {
         self.word.text = self.wordsModel.getCurrentWord()
         wordsModel.getSynonyms(word: word.text ?? "") { [weak self] error, synonymModel in
             if error != nil {
-                return
+                DispatchQueue.main.async {
+                    self?.handleError()
+                }
             }
             if let synonymModel = synonymModel, synonymModel.synonyms.count > 0 {
                 self?.synomymsArray = synonymModel.synonyms
@@ -69,6 +71,12 @@ class GameViewController: UIViewController {
         
     }
     
+    func handleError() {
+        let alert = UIAlertController(title: "Error", message: "Please try again", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .destructive)
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
     
     func endQuiz() {
         timer.invalidate()
