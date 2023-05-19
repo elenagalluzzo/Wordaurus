@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vSH-cE-vEj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SoO-6S-zxG">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.22137404580144" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1867.9389312977098" y="3.5211267605633805"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="zgr-cP-czD">
@@ -201,12 +201,12 @@
                         <outlet property="timerProgress" destination="Ydq-xU-oCV" id="UvO-hF-pxv"/>
                         <outlet property="typeAnswer" destination="dg7-nu-eBj" id="4ns-dV-Ppv"/>
                         <outlet property="word" destination="X0E-fj-b4N" id="E9n-ay-zkU"/>
-                        <segue destination="tHt-Xw-yAy" kind="presentation" identifier="showScore" id="WDV-Oc-sic"/>
+                        <segue destination="tHt-Xw-yAy" kind="presentation" identifier="showScore" id="GQQ-4m-95d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MME-3Q-pqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1762.5954198473282" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2689.3129770992364" y="3.5211267605633805"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="nQf-DN-Vf2">
@@ -290,25 +290,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKP-8h-iLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2597.709923664122" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="3524.4274809160306" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="9Jp-TK-89L">
+        <scene sceneID="Bdj-Cf-o09">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vSH-cE-vEj" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SoO-6S-zxG" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v04-Mv-Zxl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ch5-Td-CnN">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="V4I-EJ-p1t"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="frd-a5-dUx"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fhO-au-RcK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5b-zD-PrO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14.503816793893129" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="941.22137404580144" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

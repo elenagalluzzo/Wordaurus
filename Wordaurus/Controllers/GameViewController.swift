@@ -86,7 +86,9 @@ class GameViewController: UIViewController {
         }
         
         defaults.set(self.scoreArray, forKey: "allScores")
-        self.performSegue(withIdentifier: "showScore", sender: self)
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "showScore", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -97,8 +99,6 @@ class GameViewController: UIViewController {
             
         }
     }
-    
-    
 }
 
 extension GameViewController: UITextFieldDelegate {
@@ -111,7 +111,6 @@ extension GameViewController: UITextFieldDelegate {
        }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        textField.resignFirstResponder()
         guard let answer = textField.text else { return false }
         if synomymsArray.contains(answer) {
             updateScoreLabel()

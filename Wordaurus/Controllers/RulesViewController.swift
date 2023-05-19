@@ -21,7 +21,5 @@ class RulesViewController: UIViewController {
             highScore.text = "High Score: \(scores.max() ?? 0)"
         }
     }
-        // Do any additional setup after loading the view.
-
 }
 
